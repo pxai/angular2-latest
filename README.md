@@ -1,17 +1,26 @@
-# Angular2 05 forms
+# Angular2 latest
 ## What's this
-Simple example of Angular2 app set up for a console-based environment
-In this case to show the use of queries to server
+Simple example of Angular2 trying to keep up with the latest code
+explained in their tutorial[https://angular.io/docs/ts/latest/quickstart.html]
 
 ## Install
 Clone the repository
 ```
-git clone https://github.com/pxai/angular2-05-server.git
+git clone https://github.com/pxai/angular2-latest
 ```
 
 You may need to install node modules
 ```
 npm install
+```
+
+When it failed (win), I just tried:
+```
+npm -g install typings
+```
+And then don't forget to:
+```
+npm run postinstall
 ```
 
 ## Transpile and watch
