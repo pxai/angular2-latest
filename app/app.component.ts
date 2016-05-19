@@ -21,5 +21,5 @@ import {HttpSampleComponent} from './httpsample.component';
   {path: '/httpsample', name: 'HttpSample', component: HttpSampleComponent, useAsDefault : true}
   ])
 export class AppComponent {
-    private title: string = 'Server samples';
+    private title: string = 'Angular2 latest sample';
 }

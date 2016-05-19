@@ -13,7 +13,7 @@ var router_deprecated_1 = require('@angular/router-deprecated');
 var httpsample_component_1 = require('./httpsample.component');
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Server samples';
+        this.title = 'Angular2 latest sample';
     }
     AppComponent = __decorate([
         core_1.Component({
