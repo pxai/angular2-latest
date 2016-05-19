@@ -9,14 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_deprecated_1 = require('@angular/router-deprecated');
+var httpsample_component_1 = require('./httpsample.component');
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Server samples';
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
-        }), 
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
+            providers: [
+                router_deprecated_1.ROUTER_PROVIDERS
+            ],
+            template: "<h1>{{title}}</h1>\n                <nav>\n                <ul>\n                     <li><a href=\"/\">Home of Sample app</a></li>\n                     <li><a [routerLink]=\"['HttpSample']\">Http Sample</a></li>\n                </ul>\n                </nav>\n                <router-outlet></router-outlet>"
+        }),
+        router_deprecated_1.RouteConfig([
+            { path: '/httpsample', name: 'HttpSample', component: httpsample_component_1.HttpSampleComponent, useAsDefault: true }
+        ]), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
